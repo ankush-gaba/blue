@@ -26,22 +26,22 @@ namespace TestQueueService
         /// <summary>
         /// This function writes the message in the specified queue
         /// </summary>
-        //public void SendQueue()
-        //{
-        //    try
-        //    {
-        //        //Set the path to the message queue object
-        //        MessageQueue mqQueue = new MessageQueue(ReadQueuePath);
-        //        //Sends the message to the queue.
-        //        mqQueue.Send("Have a nice day", "Label");
-        //    }
-        //    catch (Exception ex)
-        //    {
+        public void WriteQueue()
+        {
+            try
+            {
+                //Set the path to the message queue object
+                MessageQueue mqQueue = new MessageQueue(ReadQueuePath);
+                //Sends the message to the queue.
+                mqQueue.Send("Have a nice day", "Label");
+            }
+            catch (Exception ex)
+            {
 
-        //        Library.WriteErrorLog("Exception:" + ex.Message);
+                Library.WriteErrorLog("Exception:" + ex.Message);
 
-        //    }
-        //}
+            }
+        }
         
         
 
