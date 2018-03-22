@@ -735,17 +735,9 @@ Creates a new CarePlan based on the goals passed in the request.
                 "profile": "willful_endurer",
                 "goals": [
                     {
-                        "focus": "bloodSugar",
+                        "focus": "glucose",
                         "goalID": "reduceSugar"
-                    },
-                    {
-                        "focus": "exercise",
-                        "goalID": "increaseWorkoutIntensity"
-                    },
-                    {
-                        "focus": "bmi",
-                        "goalID": "loseWeight"
-                    },
+                    } ,
                 ]
             }
 
@@ -878,19 +870,17 @@ Creates a new CarePlan based on the goals passed in the request.
             ],
             "focuses": [
                 {
-                    "focus": "diet",
+                    "focus": "glucose",
                     "content": [
                         { 
                             "type": "challenge",
                             "day": 0, 
                             "heart": true,
-                            "notification": {
-                                "title": "",
-                                "body": ""
-                            },
-                            "title": "Time for a FOCUS CHALLENGE for improving your Blood Pressure.  Let’s get started.",
-                            "body": "This week we will focus on improvements you can make regarding your blood pressure. Blood pressure is simply a measurement of the force exerted against the walls of your arteries as your heart pumps blood to your body. The BEST path to reducing blood pressure is to reduce salt (or sodium) in your diet along with healthy diet and exercise. We want to help you.",
-                            "url": "http://domain/appName/diet_challenge.json"
+                            "notification": null,                           
+							"title": "Time for a FOCUS CHALLENGE for improving your Blood Pressure.  Let’s get started.",
+							"body": "This week we will focus on improvements you can make regarding your blood pressure. Blood pressure is simply a measurement of the force exerted against the walls of your arteries as your heart pumps blood to your body. The BEST path to reducing blood pressure is to reduce salt (or sodium) in your diet along with healthy diet and exercise. We want to help you.",
+							"url": "http://domain/appName/glucose_challenge.json",
+							"response": "Great!  You are going to arm yourself with the information you need to successfully improve your blood pressure!"
                         },
                         { 
                             "type": "video",
@@ -899,55 +889,43 @@ Creates a new CarePlan based on the goals passed in the request.
                             "notification": null,
                             "title": "Learn more about the information to follow.  It’s just a couple minutes of your time. ",
                             "body": "Also check out Pat and Allison’s short video.  Get to know Pat and Allison from the AHA. They have some great insights on blood pressure.",
-                            "url": "http://careplan.heart.org/videos/diet/BloodPressure.mp4"
+                            "url": "http://careplan.heart.org/videos/glucose/BloodSugar.mp4"
                         },
                         { 
                             "type": "article",
                             "day": 1, 
                             "heart": false,
-                            "notification": {
-                                "title": "",
-                                "body": ""
-                            },
+                            "notification": null,
                             "title": "Let’s talk about blood pressure - We will add some insights to help with the goal of keeping you healthy.  One of the top things to think about is sodium intake. ",
                             "body": "Too much sodium in your system causes your body to retain (hold onto) water. This puts an extra burden on your heart and blood vessels. In some people, this may lead to or raise high blood pressure.  Click this link to learn more. Read today’ article to learn more.",
-                            "url": "http://domain/appName/diet_article.json"
+                            "url":"http://www.heart.org/idc/groups/heart-public/@wcm/@hcm/documents/downloadable/ucm_300625.pdf"
                         },
                         { 
                             "type": "video",
                             "day": 2, 
                             "heart": false,
-                            "notification": {
-                                "title": "",
-                                "body": ""
-                            },
+                            "notification": null,
                             "title": "Blood Pressure at a healthy level has a 2-minute explanation. See the video from Eduardo Sanchez MD, a Medical Director at the American Heart Association.",
                             "body": "",
-                            "url": "http://careplan.heart.org/videos/diet/Eduardo-BloodPressure.mp4"
+                            "url": "http://careplan.heart.org/videos/glucose/Eduardo-BloodSugar.mp4"
                         },
                         { 
                             "type": "video",
                             "day": 3, 
                             "heart": true,
-                            "notification": {
-                                "title": "",
-                                "body": ""
-                            },
+                            "notification": null,
                             "title": "This 4 minute video (Managing Blood Pressure) will keep you in total control of your health and life.",
                             "body": "",
-                            "url": "http://careplan.heart.org/videos/diet/OneofLifesSimple7-2017.mp4"
+                            "url": "http://careplan.heart.org/videos/glucose/OneofLifesSimple7-2017.mp4"
                         },
                         { 
                             "type": "share",
                             "day": 4, 
                             "heart": false,
-                            "notification": {
-                                "title": "",
-                                "body": ""
-                            },
-                            "title": " A great way to maintain your progress of achieving a healthier low sodium diet is to share what you’ve learned with a family member or friend! ",
-                            "body": "Eat fewer packaged foods / Remove the salt shaker from the table/ Ask at every meal I eat out “how much salt is in that?” (look for less than 1500 mg). Pass it on!",
-                            "url": "http://domain/appName/diet_share.json"
+                            "notification": null,                            
+							"title": " A great way to maintain your progress of achieving a healthier low sodium diet is to share what you’ve learned with a family member or friend! ",
+							"body": "Eat fewer packaged foods / Remove the salt shaker from the table/ Ask at every meal I eat out “how much salt is in that?” (look for less than 1500 mg). Pass it on!"
+   
                         },
                         { 
                             "type": "quiz",
@@ -956,19 +934,18 @@ Creates a new CarePlan based on the goals passed in the request.
                             "notification": null,
                             "title": "",
                             "body": "",
-                            "url": "http://domain/appName/diet_quiz.json"
+                            "url": "http://domain/appName/glucose_quiz.json"
                         },
                         { 
                             "type": "final",
                             "day": 6, 
                             "heart": true,
-                            "notification": {
-                                "title": "",
-                                "body": ""
-                            },
-                            "title": "Congratulations on getting your hearts towards achieving better Blood Pressure!  It is time to tell us how you did and get the last one!",
-                            "body": " We trust you learned a lot about our easy-to-use strategies for managing the simple things to have a heart-healthy life.  Remember to go back and look at the tools to get all your hearts.  You need HEARTS to get to the next topic!  So please rate how you did: \n Excellent \n Very Good \n Good \n Fair \n Poor",
-                            "url": "http://domain/appName/diet_final.json"
+                            "notification": null,                             
+							"title": "Congratulations on getting your hearts towards achieving better Blood Pressure!  It is time to tell us how you did and get the last one!",
+							"body": "We trust you learned a lot about our easy-to-use strategies for managing the simple things to have a heart-healthy life.  Remember to go back and look at the tools to get all your hearts.  You need HEARTS to get to the next topic!  So please rate how you did:",
+							"options": ["Excellent","Very Good","Good","Fair","Poor"],
+							"response": "Thank you again for completing the session on blood pressure.  Now you are now armed with the information you need to successfully improve your blood pressure!"
+    
                         } 
                     ]
                 }
