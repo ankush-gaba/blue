@@ -878,53 +878,98 @@ Creates a new CarePlan based on the goals passed in the request.
             ],
             "focuses": [
                 {
-                    "focus": "exercise",
+                    "focus": "diet",
                     "content": [
-                        {
+                        { 
                             "type": "challenge",
-                            "day": 0,
-                            "heart": true,
-                            "notification": null,
-                            "url": "http://careplan.heart.org/challenges/exercise/exercise_challenge.json"
-                        },
-                        {
-                            "type": "video",
-                            "day": 0,
-                            "heart": true,
-                            "notification": null,
-                            "url": "http://careplan.heart.org/videos/exercise/getting_started.m3u8"
-                        },
-                        {
-                            "type": "quiz",
-                            "day": 1,
-                            "heart": false,
-                            "notification": null,
-                            "url": "http://careplan.heart.org/challenges/exercise/exercise_quiz.json"
-                        },
-                        {
-                            "type": "article",
-                            "day": 2,
+                            "day": 0, 
                             "heart": true,
                             "notification": {
-                                "title": "Time to Take Control",
-                                "body": "Day 2\nYou've Got This\nLet's get a run down of your physical activity."
+                                "title": "",
+                                "body": ""
                             },
-                            "url": "http://careplan.heart.org/challenges/exercise/exercise_article.html"
+                            "title": "Time for a FOCUS CHALLENGE for improving your Blood Pressure.  Let’s get started.",
+                            "body": "This week we will focus on improvements you can make regarding your blood pressure. Blood pressure is simply a measurement of the force exerted against the walls of your arteries as your heart pumps blood to your body. The BEST path to reducing blood pressure is to reduce salt (or sodium) in your diet along with healthy diet and exercise. We want to help you.",
+                            "url": "http://domain/appName/diet_challenge.json"
                         },
-                        {
+                        { 
                             "type": "video",
-                            "day": 3,
+                            "day": 0, 
                             "heart": false,
                             "notification": null,
-                            "url": "http://careplan.heart.org/challenges/exercise/exercise.m3u8"
+                            "title": "Learn more about the information to follow.  It’s just a couple minutes of your time. ",
+                            "body": "Also check out Pat and Allison’s short video.  Get to know Pat and Allison from the AHA. They have some great insights on blood pressure.",
+                            "url": "http://careplan.heart.org/videos/diet/BloodPressure.mp4"
                         },
-                        {
+                        { 
                             "type": "article",
-                            "day": 4,
+                            "day": 1, 
+                            "heart": false,
+                            "notification": {
+                                "title": "",
+                                "body": ""
+                            },
+                            "title": "Let’s talk about blood pressure - We will add some insights to help with the goal of keeping you healthy.  One of the top things to think about is sodium intake. ",
+                            "body": "Too much sodium in your system causes your body to retain (hold onto) water. This puts an extra burden on your heart and blood vessels. In some people, this may lead to or raise high blood pressure.  Click this link to learn more. Read today’ article to learn more.",
+                            "url": "http://domain/appName/diet_article.json"
+                        },
+                        { 
+                            "type": "video",
+                            "day": 2, 
+                            "heart": false,
+                            "notification": {
+                                "title": "",
+                                "body": ""
+                            },
+                            "title": "Blood Pressure at a healthy level has a 2-minute explanation. See the video from Eduardo Sanchez MD, a Medical Director at the American Heart Association.",
+                            "body": "",
+                            "url": "http://careplan.heart.org/videos/diet/Eduardo-BloodPressure.mp4"
+                        },
+                        { 
+                            "type": "video",
+                            "day": 3, 
+                            "heart": true,
+                            "notification": {
+                                "title": "",
+                                "body": ""
+                            },
+                            "title": "This 4 minute video (Managing Blood Pressure) will keep you in total control of your health and life.",
+                            "body": "",
+                            "url": "http://careplan.heart.org/videos/diet/OneofLifesSimple7-2017.mp4"
+                        },
+                        { 
+                            "type": "share",
+                            "day": 4, 
+                            "heart": false,
+                            "notification": {
+                                "title": "",
+                                "body": ""
+                            },
+                            "title": " A great way to maintain your progress of achieving a healthier low sodium diet is to share what you’ve learned with a family member or friend! ",
+                            "body": "Eat fewer packaged foods / Remove the salt shaker from the table/ Ask at every meal I eat out “how much salt is in that?” (look for less than 1500 mg). Pass it on!",
+                            "url": "http://domain/appName/diet_share.json"
+                        },
+                        { 
+                            "type": "quiz",
+                            "day": 5, 
                             "heart": false,
                             "notification": null,
-                            "url": "http://careplan.heart.org/challenges/exercise/exercise_article_2.html"
+                            "title": "",
+                            "body": "",
+                            "url": "http://domain/appName/diet_quiz.json"
                         },
+                        { 
+                            "type": "final",
+                            "day": 6, 
+                            "heart": true,
+                            "notification": {
+                                "title": "",
+                                "body": ""
+                            },
+                            "title": "Congratulations on getting your hearts towards achieving better Blood Pressure!  It is time to tell us how you did and get the last one!",
+                            "body": " We trust you learned a lot about our easy-to-use strategies for managing the simple things to have a heart-healthy life.  Remember to go back and look at the tools to get all your hearts.  You need HEARTS to get to the next topic!  So please rate how you did: \n Excellent \n Very Good \n Good \n Fair \n Poor",
+                            "url": "http://domain/appName/diet_final.json"
+                        } 
                     ]
                 }
             ],
@@ -940,7 +985,7 @@ Creates a new CarePlan based on the goals passed in the request.
                     "body": "Record your latest weight measurement and get back on track"
                 },
                 {
-                    "day": 10,
+                    "day": 8,
                     "title": "Resume your CarePlan!",
                     "body": "Open the app to see the latest CarePlan content"
                 }
